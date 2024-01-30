@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WHOIS Lookup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5dc; /* Cream color background */
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            box-shadow: 0px 0px 10px 0px #aaa; /* Adding shadow */
+        }
+
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        .whois-info {
+            text-align: left;
+            margin-top: 20px;
+            background-color: #eee;
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>WHOIS Lookup</h1>
+        <form method="post" action="/">
+            <input type="text" name="domain" placeholder="Enter a website URL" required>
+            <button type="submit">Lookup</button>
+        </form>
+        {% if domain_info %}
+            <div class="whois-info">
+                <pre>{{ domain_info }}</pre>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
