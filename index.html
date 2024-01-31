@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Domain App</title>
+    <!-- Link the CSS file -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link Font Awesome for icons -->
+    <script
+      src="https://kit.fontawesome.com/4b9ba14b0f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Link Google Fonts for fonts -->
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Domain App</h1>
+      <p class="subtitle">Check the availability of any domain name</p>
+      <form id="form" class="form">
+        <input
+          id="domain-input"
+          class="input"
+          type="text"
+          placeholder="Enter a domain name"
+        />
+        <button id="submit-button" class="button" type="submit">Check</button>
+      </form>
+      <div id="result" class="result">
+        <span id="result-text" class="result-text"></span>
+        <i id="result-icon" class="result-icon"></i>
+      </div>
+    </div>
+    <!-- Link the JS file -->
+    <script src="script.js"></script>
+  </body>
+</html>
