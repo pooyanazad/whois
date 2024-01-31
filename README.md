@@ -1,3 +1,4 @@
 # whois
 whois app with API </br>
-decide language under process
+I preferd use JavaScript to create this app </br>
+attention: You need to get your own api key
